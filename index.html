@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Google Lens vs Mobilenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Google Lens or Mobilenet</h1>
+    <h3>Result</h3>
+    <label>test image</label>
+    <hr width="75%">
+    <ol type="I">
+        <div>
+            <li><img src="a.jpg" id="a"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl1">A box of nuts</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn1"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="b.jpg" id="b"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl2">Penware</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn2"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="c.jpg" id="c"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl3">Almond round tin box</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn3"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="d.jpg" id="d"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl4">Detol sanitizer</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn4"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="e.jpg" id="e"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl5">Wallet</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn5" ></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="f.jpg" id="f"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl6">Nailcutter</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn6"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="g.jpg" id="g"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl7">Bluetooth keyboard</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn7"></label>
+            </span>
+        </div>
+        <div>
+            <li><img src="h.jpg" id="h"></li>
+            <span>
+                <h3>Google Lens</h3>
+                <label id="gl8">Rubik's cube</label>
+            </span>
+            <span>
+                <h3>Mobilenet</h3>
+                <label id="mn8"></label>
+            </span>
+        </div>
+    </ol>
+    <button class="btn btn-success" onclick="check()">Check</button>
+    <h3 id="resultgr"></h3><br><br>
+    <h3 id="resultmn"></h3>
+    <script src="main.js"></script>
+</body>
+
+</html>
